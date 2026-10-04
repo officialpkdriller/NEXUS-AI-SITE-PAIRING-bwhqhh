@@ -1,3 +1,5 @@
+
+
 import fetch from 'node-fetch';
 import { Sticker, StickerTypes } from 'wa-sticker-formatter';
 import { promises as fs } from 'fs';
@@ -5,7 +7,7 @@ import path from 'path';
 import { getFakeQuoted } from '../../lib/fakeQuoted.js';
 
 export default async (context) => {
-    const { client, m, text, prefix, packname, author } = context;
+    const { client, m, gygghjtext, prefix, packname, author } = context;
     const fq = getFakeQuoted(m);
     await client.sendMessage(m.chat, { react: { text: '⌛', key: m.reactKey } });
 
