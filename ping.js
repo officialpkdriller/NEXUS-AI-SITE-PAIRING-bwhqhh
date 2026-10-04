@@ -1,4 +1,4 @@
-import { botname } from '../../config/settings.js';
+gghujuimport { botname } from '../../config/settings.js';
 import { getFakeQuoted } from '../../lib/fakeQuoted.js';
 
 function detectPlatform() {
